@@ -13,6 +13,7 @@
 		840B7F7224E27EDA00676159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B7F7024E27EDA00676159 /* Main.storyboard */; };
 		840B7F7424E27EF300676159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B7F7324E27EF300676159 /* Assets.xcassets */; };
 		840B7F7724E27EF300676159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B7F7524E27EF300676159 /* LaunchScreen.storyboard */; };
+		8439F55D24E3D19300084A86 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F55C24E3D19300084A86 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		840B7F7324E27EF300676159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840B7F7624E27EF300676159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840B7F7824E27EF300676159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8439F55C24E3D19300084A86 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				840B7F6924E27EDA00676159 /* VKOAuth2 */,
-				840B7F6824E27EDA00676159 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +52,7 @@
 				840B7F6724E27EDA00676159 /* VKOAuth2.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		840B7F6924E27EDA00676159 /* VKOAuth2 */ = {
@@ -63,6 +65,8 @@
 				840B7F7324E27EF300676159 /* Assets.xcassets */,
 				840B7F7524E27EF300676159 /* LaunchScreen.storyboard */,
 				840B7F7824E27EF300676159 /* Info.plist */,
+				8439F55C24E3D19300084A86 /* WebViewController.swift */,
+				840B7F6824E27EDA00676159 /* Products */,
 			);
 			path = VKOAuth2;
 			sourceTree = "<group>";
@@ -141,6 +145,7 @@
 				840B7F6F24E27EDA00676159 /* ViewController.swift in Sources */,
 				840B7F6B24E27EDA00676159 /* AppDelegate.swift in Sources */,
 				840B7F6D24E27EDA00676159 /* SceneDelegate.swift in Sources */,
+				8439F55D24E3D19300084A86 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

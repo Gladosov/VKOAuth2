@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AuthenticationServices
+import SafariServices
 
 class LoginViewController: UIViewController {
 
@@ -19,25 +19,18 @@ class LoginViewController: UIViewController {
     @IBAction func touchedLogin(button: UIButton) {
         guard let vkUrl = URL(string: "https://oauth.vk.com/authorize?client_id=7469071&redirect_uri=https://google.com&display=mobile&response_type=token&scope=8194&revoke=1") else { return }
         
-        let session = ASWebAuthenticationSession(url: vkUrl, callbackURLScheme: "https://google.com") { (url, error) in
-            if error != nil {
-                print(error.debugDescription)
-                return
+        let authController = WebViewController()
+        authController.initURL = vkUrl
+        authController.redirectURL = URL(string: "https://www.google.com")!
+        authController.completion = { result in
+            switch result {
+            case .success(let response): break
+                
+            case .failure(_):
+                print("Error")
             }
-            print("Ok")
         }
         
-        session.presentationContextProvider = self
-        
-        session.start()
-        
+        present(authController, animated: true)
     }
-}
-
-extension LoginViewController: ASWebAuthenticationPresentationContextProviding {
-    func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
-        return view.window!
-    }
-    
-    
 }
