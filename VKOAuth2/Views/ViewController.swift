@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func touchedLogin(button: UIButton) {
@@ -24,13 +25,15 @@ class LoginViewController: UIViewController {
         authController.redirectURL = URL(string: "https://www.google.com")!
         authController.completion = { result in
             switch result {
-            case .success(let response): break
+            case .success(let response):
+                UserDefaults.standard.set(response.token, forKey: "token")
+                UserDefaults.standard.set(response.userID, forKey: "userID")
+                UserDefaults.standard.set(response.expiresDate, forKey: "expiresDate")
                 
             case .failure(_):
                 print("Error")
             }
         }
-        
         present(authController, animated: true)
     }
 }

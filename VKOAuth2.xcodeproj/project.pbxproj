@@ -14,6 +14,8 @@
 		840B7F7424E27EF300676159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B7F7324E27EF300676159 /* Assets.xcassets */; };
 		840B7F7724E27EF300676159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B7F7524E27EF300676159 /* LaunchScreen.storyboard */; };
 		8439F55D24E3D19300084A86 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F55C24E3D19300084A86 /* WebViewController.swift */; };
+		84BE6F9524EFB526001E484A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE6F9424EFB526001E484A /* User.swift */; };
+		84BE6F9824EFC173001E484A /* VKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE6F9724EFC173001E484A /* VKStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		840B7F7624E27EF300676159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840B7F7824E27EF300676159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8439F55C24E3D19300084A86 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		84BE6F9424EFB526001E484A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84BE6F9724EFC173001E484A /* VKStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +62,43 @@
 		840B7F6924E27EDA00676159 /* VKOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
+				84BE6F9A24EFD5C0001E484A /* Views */,
+				84BE6F9624EFBF81001E484A /* Services */,
+				84BE6F9324EFB504001E484A /* Models */,
 				840B7F6A24E27EDA00676159 /* AppDelegate.swift */,
 				840B7F6C24E27EDA00676159 /* SceneDelegate.swift */,
-				840B7F6E24E27EDA00676159 /* ViewController.swift */,
 				840B7F7024E27EDA00676159 /* Main.storyboard */,
 				840B7F7324E27EF300676159 /* Assets.xcassets */,
 				840B7F7524E27EF300676159 /* LaunchScreen.storyboard */,
 				840B7F7824E27EF300676159 /* Info.plist */,
-				8439F55C24E3D19300084A86 /* WebViewController.swift */,
 				840B7F6824E27EDA00676159 /* Products */,
 			);
 			path = VKOAuth2;
+			sourceTree = "<group>";
+		};
+		84BE6F9324EFB504001E484A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84BE6F9424EFB526001E484A /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84BE6F9624EFBF81001E484A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84BE6F9724EFC173001E484A /* VKStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84BE6F9A24EFD5C0001E484A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				840B7F6E24E27EDA00676159 /* ViewController.swift */,
+				8439F55C24E3D19300084A86 /* WebViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +174,8 @@
 			files = (
 				840B7F6F24E27EDA00676159 /* ViewController.swift in Sources */,
 				840B7F6B24E27EDA00676159 /* AppDelegate.swift in Sources */,
+				84BE6F9824EFC173001E484A /* VKStore.swift in Sources */,
+				84BE6F9524EFB526001E484A /* User.swift in Sources */,
 				840B7F6D24E27EDA00676159 /* SceneDelegate.swift in Sources */,
 				8439F55D24E3D19300084A86 /* WebViewController.swift in Sources */,
 			);
