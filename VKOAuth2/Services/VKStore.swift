@@ -9,7 +9,9 @@
 import Foundation
 
 protocol VKService {
-    func fetchFriends(offset: Int, completion: @escaping (FriendsResponse?) -> Void)
+    var baseAPIUrl: String { get }
+    
+    func fetchFriends(offset: Int, completion: @escaping (FreindsResponse?) -> Void)
 }
 
 class VKStore: VKService {
@@ -17,14 +19,16 @@ class VKStore: VKService {
     let accessToken: String
     let userID: String
 
-    private let baseAPIUrl = "https://api.vk.com/method"
+    var baseAPIUrl: String {
+        "https://api.vk.com/method"
+    }
     
     init(accessToken: String, userID: String) {
         self.accessToken = accessToken
         self.userID = userID
     }
     
-    func fetchFriends(offset: Int, completion: @escaping (FriendsResponse?) -> Void) {
+    func fetchFriends(offset: Int, completion: @escaping (FreindsResponse?) -> Void) {
         
         let params: [String: String] = [
             "user_id": userID,
