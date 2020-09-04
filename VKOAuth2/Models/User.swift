@@ -8,8 +8,8 @@
 
 import Foundation
 
-// MARK: - FreindsResponse
-struct FreindsResponse: Codable {
+// MARK: - FrindsResponse
+struct FrindsResponse: Codable {
     let response: FreindsResponseDetail
 }
 
@@ -23,7 +23,7 @@ struct FreindsResponseDetail: Codable {
 struct User: Codable {
     let id: Int
     let firstName, lastName: String
-    let isClosed, canAccessClosed: Bool
+    let isClosed, canAccessClosed: Bool?
     let photo200_Orig: String
     let online: Int
     let trackCode: String
