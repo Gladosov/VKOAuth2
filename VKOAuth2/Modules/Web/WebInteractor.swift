@@ -11,6 +11,7 @@
 import Foundation
 
 final class WebInteractor {
+    private let userSettings = UserSettings.shared
 }
 
 // MARK: - Extensions -
@@ -44,7 +45,9 @@ extension WebInteractor: WebInteractorInterface {
                 return
         }
         let expiresIn = Date(timeIntervalSinceNow: expiresInterval)
-        /// TODO: Save data into UserDafults
+        
+        userSettings.saveToken(accessToken: accessToken, expiresDate: expiresIn, userId: userID)
+        
         completion(true)
     }
 }

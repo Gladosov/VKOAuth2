@@ -36,9 +36,14 @@ extension LoginWireframe: LoginWireframeInterface {
     func navigate(to option: LoginNavigationOption) {
         switch option {
         case .home:
-            break
+            let wireframe = TabbarWireframe(subModules: (
+                FriendsWireframe(), ()
+            ))
+            navigationController?.setRootWireframe(wireframe)
         case .web:
-            let wireframe = WebWireframe()
+            let wireframe = WebWireframe(didFinish: { [weak self] isSuccess in
+                self?.navigate(to: .home)
+            })
             
             navigationController?.present(wireframe.viewController, animated: true)
         }

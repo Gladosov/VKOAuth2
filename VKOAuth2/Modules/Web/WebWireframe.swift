@@ -13,10 +13,12 @@ import UIKit
 final class WebWireframe: BaseWireframe {
 
     // MARK: - Private properties -
+    private var didFinish: (Bool) -> () = { _ in }
     // MARK: - Module setup -
 
-    init() {
+    init(didFinish: @escaping (Bool) -> ()) {
         let moduleViewController = WebViewController()
+        self.didFinish = didFinish
         super.init(viewController: moduleViewController)
 
         let interactor = WebInteractor()
@@ -29,7 +31,8 @@ final class WebWireframe: BaseWireframe {
 // MARK: - Extensions -
 
 extension WebWireframe: WebWireframeInterface {
-    func popBack() {
+    func popBack(isSuccess: Bool) {
+        self.didFinish(isSuccess)
         self.viewController.dismiss(animated: true)
     }
 }

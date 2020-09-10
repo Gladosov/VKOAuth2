@@ -45,9 +45,7 @@ extension WebPresenter: WebPresenterInterface {
         
         if urlHost == redirectHost {
             interactor.login(url: url) { [weak self] (isSuccess) in
-                if isSuccess {
-                    self?.wireframe.popBack()
-                }
+                self?.wireframe.popBack(isSuccess: isSuccess)
             }
         }
     }

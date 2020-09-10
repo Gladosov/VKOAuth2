@@ -28,6 +28,20 @@
 		843DE86E24FF939F007B8886 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DE86924FF939F007B8886 /* WebViewController.swift */; };
 		843DE86F24FF939F007B8886 /* WebInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DE86A24FF939F007B8886 /* WebInteractor.swift */; };
 		843DE87024FF939F007B8886 /* WebWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DE86B24FF939F007B8886 /* WebWireframe.swift */; };
+		84BA7732250A0B59003D5061 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7731250A0B59003D5061 /* UserSettings.swift */; };
+		84BA7745250A1262003D5061 /* TabbarInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7740250A1262003D5061 /* TabbarInterfaces.swift */; };
+		84BA7746250A1262003D5061 /* TabbarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7741250A1262003D5061 /* TabbarPresenter.swift */; };
+		84BA7747250A1262003D5061 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7742250A1262003D5061 /* TabbarViewController.swift */; };
+		84BA7748250A1262003D5061 /* TabbarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7743250A1262003D5061 /* TabbarInteractor.swift */; };
+		84BA7749250A1262003D5061 /* TabbarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7744250A1262003D5061 /* TabbarWireframe.swift */; };
+		84BA7751250A140B003D5061 /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BA774B250A140B003D5061 /* Friends.storyboard */; };
+		84BA7752250A140B003D5061 /* FriendsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA774C250A140B003D5061 /* FriendsInterfaces.swift */; };
+		84BA7753250A140B003D5061 /* FriendsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA774D250A140B003D5061 /* FriendsPresenter.swift */; };
+		84BA7754250A140B003D5061 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA774E250A140B003D5061 /* FriendsViewController.swift */; };
+		84BA7755250A140B003D5061 /* FriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA774F250A140B003D5061 /* FriendsInteractor.swift */; };
+		84BA7756250A140B003D5061 /* FriendsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7750250A140B003D5061 /* FriendsWireframe.swift */; };
+		84BA775A250A1E3E003D5061 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA7758250A1E3E003D5061 /* FriendCell.swift */; };
+		84BA775B250A1E3E003D5061 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BA7759250A1E3E003D5061 /* FriendCell.xib */; };
 		84BE6F9524EFB526001E484A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE6F9424EFB526001E484A /* User.swift */; };
 		84DE00652502231A0018525F /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE00642502231A0018525F /* HttpRouter.swift */; };
 		84DE0067250225FC0018525F /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE0066250225FC0018525F /* HttpService.swift */; };
@@ -63,6 +77,20 @@
 		843DE86924FF939F007B8886 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		843DE86A24FF939F007B8886 /* WebInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInteractor.swift; sourceTree = "<group>"; };
 		843DE86B24FF939F007B8886 /* WebWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebWireframe.swift; sourceTree = "<group>"; };
+		84BA7731250A0B59003D5061 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		84BA7740250A1262003D5061 /* TabbarInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarInterfaces.swift; sourceTree = "<group>"; };
+		84BA7741250A1262003D5061 /* TabbarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarPresenter.swift; sourceTree = "<group>"; };
+		84BA7742250A1262003D5061 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		84BA7743250A1262003D5061 /* TabbarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarInteractor.swift; sourceTree = "<group>"; };
+		84BA7744250A1262003D5061 /* TabbarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarWireframe.swift; sourceTree = "<group>"; };
+		84BA774B250A140B003D5061 /* Friends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		84BA774C250A140B003D5061 /* FriendsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsInterfaces.swift; sourceTree = "<group>"; };
+		84BA774D250A140B003D5061 /* FriendsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPresenter.swift; sourceTree = "<group>"; };
+		84BA774E250A140B003D5061 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		84BA774F250A140B003D5061 /* FriendsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsInteractor.swift; sourceTree = "<group>"; };
+		84BA7750250A140B003D5061 /* FriendsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsWireframe.swift; sourceTree = "<group>"; };
+		84BA7758250A1E3E003D5061 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		84BA7759250A1E3E003D5061 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		84BE6F9424EFB526001E484A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84DE00642502231A0018525F /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
 		84DE0066250225FC0018525F /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
@@ -163,6 +191,8 @@
 		843DE85824FF8D55007B8886 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				84BA774A250A13F0003D5061 /* Friends */,
+				84BA7733250A11D1003D5061 /* Tabbar */,
 				843DE86624FF936D007B8886 /* Web */,
 				843DE85924FF8D63007B8886 /* Login */,
 			);
@@ -194,6 +224,41 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
+		84BA7733250A11D1003D5061 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				84BA7740250A1262003D5061 /* TabbarInterfaces.swift */,
+				84BA7741250A1262003D5061 /* TabbarPresenter.swift */,
+				84BA7742250A1262003D5061 /* TabbarViewController.swift */,
+				84BA7743250A1262003D5061 /* TabbarInteractor.swift */,
+				84BA7744250A1262003D5061 /* TabbarWireframe.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		84BA774A250A13F0003D5061 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				84BA7757250A1E18003D5061 /* Cells */,
+				84BA774B250A140B003D5061 /* Friends.storyboard */,
+				84BA774C250A140B003D5061 /* FriendsInterfaces.swift */,
+				84BA774D250A140B003D5061 /* FriendsPresenter.swift */,
+				84BA774E250A140B003D5061 /* FriendsViewController.swift */,
+				84BA774F250A140B003D5061 /* FriendsInteractor.swift */,
+				84BA7750250A140B003D5061 /* FriendsWireframe.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		84BA7757250A1E18003D5061 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84BA7758250A1E3E003D5061 /* FriendCell.swift */,
+				84BA7759250A1E3E003D5061 /* FriendCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		84BE6F9324EFB504001E484A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +274,7 @@
 				84DE0066250225FC0018525F /* HttpService.swift */,
 				84DE006825022B870018525F /* FriendsHttpRouter.swift */,
 				84DE006A25022B950018525F /* FriendsHttpService.swift */,
+				84BA7731250A0B59003D5061 /* UserSettings.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +357,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				843DE86024FF8DA6007B8886 /* Login.storyboard in Resources */,
+				84BA775B250A1E3E003D5061 /* FriendCell.xib in Resources */,
+				84BA7751250A140B003D5061 /* Friends.storyboard in Resources */,
 				840B7F7724E27EF300676159 /* LaunchScreen.storyboard in Resources */,
 				840B7F7424E27EF300676159 /* Assets.xcassets in Resources */,
 				840B7F7224E27EDA00676159 /* Main.storyboard in Resources */,
@@ -346,9 +414,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BA7749250A1262003D5061 /* TabbarWireframe.swift in Sources */,
 				843DE86E24FF939F007B8886 /* WebViewController.swift in Sources */,
 				843DE86324FF8DA6007B8886 /* LoginViewController.swift in Sources */,
 				84DE006F250232750018525F /* FriendsService.swift in Sources */,
+				84BA7748250A1262003D5061 /* TabbarInteractor.swift in Sources */,
 				843DE85624FF8C39007B8886 /* InteractorInterface.swift in Sources */,
 				843DE86C24FF939F007B8886 /* WebInterfaces.swift in Sources */,
 				843DE85424FF8C39007B8886 /* ViewInterface.swift in Sources */,
@@ -356,20 +426,30 @@
 				843DE86F24FF939F007B8886 /* WebInteractor.swift in Sources */,
 				840B7F6B24E27EDA00676159 /* AppDelegate.swift in Sources */,
 				843DE86124FF8DA6007B8886 /* LoginInterfaces.swift in Sources */,
+				84BA7752250A140B003D5061 /* FriendsInterfaces.swift in Sources */,
 				84DE006925022B870018525F /* FriendsHttpRouter.swift in Sources */,
 				843DE86424FF8DA6007B8886 /* LoginInteractor.swift in Sources */,
 				84BE6F9524EFB526001E484A /* User.swift in Sources */,
 				84DE00652502231A0018525F /* HttpRouter.swift in Sources */,
 				843DE86524FF8DA6007B8886 /* LoginWireframe.swift in Sources */,
 				843DE86224FF8DA6007B8886 /* LoginPresenter.swift in Sources */,
+				84BA7747250A1262003D5061 /* TabbarViewController.swift in Sources */,
+				84BA7756250A140B003D5061 /* FriendsWireframe.swift in Sources */,
+				84BA7755250A140B003D5061 /* FriendsInteractor.swift in Sources */,
+				84BA7753250A140B003D5061 /* FriendsPresenter.swift in Sources */,
 				84DE006D250230E60018525F /* FriendsAPI.swift in Sources */,
 				843DE87024FF939F007B8886 /* WebWireframe.swift in Sources */,
 				843DE85324FF8C39007B8886 /* UIStoryboardExtension.swift in Sources */,
 				843DE85224FF8C38007B8886 /* PresenterInterface.swift in Sources */,
 				84DE006B25022B950018525F /* FriendsHttpService.swift in Sources */,
+				84BA7745250A1262003D5061 /* TabbarInterfaces.swift in Sources */,
 				843DE86D24FF939F007B8886 /* WebPresenter.swift in Sources */,
+				84BA7754250A140B003D5061 /* FriendsViewController.swift in Sources */,
+				84BA775A250A1E3E003D5061 /* FriendCell.swift in Sources */,
 				840B7F6D24E27EDA00676159 /* SceneDelegate.swift in Sources */,
+				84BA7732250A0B59003D5061 /* UserSettings.swift in Sources */,
 				84DE0067250225FC0018525F /* HttpService.swift in Sources */,
+				84BA7746250A1262003D5061 /* TabbarPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

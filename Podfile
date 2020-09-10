@@ -7,5 +7,6 @@ target 'VKOAuth2' do
 
   # Pods for VKOAuth2
   pod 'Alamofire', '~> 5.2'
+  pod 'SDWebImage', '~> 5.0'
 
 end

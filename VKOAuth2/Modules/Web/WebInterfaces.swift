@@ -11,7 +11,7 @@
 import UIKit
 
 protocol WebWireframeInterface: WireframeInterface {
-    func popBack()
+    func popBack(isSuccess: Bool)
 }
 
 protocol WebViewInterface: ViewInterface {

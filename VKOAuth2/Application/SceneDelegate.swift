@@ -19,6 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         let rootViewController = UINavigationController()
+        rootViewController.navigationBar.prefersLargeTitles = true
+        rootViewController.navigationBar.isHidden = true
         rootViewController.setRootWireframe(LoginWireframe())
         
         window?.rootViewController = rootViewController
