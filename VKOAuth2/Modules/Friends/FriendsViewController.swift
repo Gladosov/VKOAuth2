@@ -16,7 +16,7 @@ final class FriendsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var presenter: FriendsPresenterInterface!
-
+    
     // MARK: - Lifecycle -
 
     override func viewDidLoad() {
@@ -30,8 +30,7 @@ final class FriendsViewController: UIViewController {
         let nib = UINib(nibName: "FriendCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: FriendCell.identifier)
         
-        self.tabBarItem.image = UIImage(systemName: "book")
-        self.tabBarItem.title = "Друзья"
+        self.navigationItem.title = "Мои друзья"
     }
 
 }
@@ -55,8 +54,24 @@ extension FriendsViewController: UITableViewDataSource, UITableViewDelegate {
         let user = presenter.friends[indexPath.row]
         cell.configure(with: user)
         
+        cell.transform = CGAffineTransform(translationX: 0, y: cell.frame.height / 2)
+        cell.alpha = 0
+        
+        UIView.animate(withDuration: 0.5, delay: 0.05, options: .curveEaseInOut, animations: {
+            cell.alpha = 1
+            cell.transform = CGAffineTransform(translationX: 0, y: 0)
+        })
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == presenter.friendsCount - 1 {
+            presenter.loadMoreFriends()
+        }
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.selectRow(at: nil, animated: false, scrollPosition: .none)
+    }
 }

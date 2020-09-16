@@ -19,8 +19,13 @@ final class FriendsWireframe: BaseWireframe {
     // MARK: - Module setup -
 
     init() {
+        let navigationController = UINavigationController()
         let moduleViewController = storyboard.instantiateViewController(ofType: FriendsViewController.self)
-        super.init(viewController: moduleViewController)
+        navigationController.setViewControllers([moduleViewController], animated: false)
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.tabBarItem.image = UIImage(systemName: "person.3.fill")
+        navigationController.tabBarItem.title = "Друзья"
+        super.init(viewController: navigationController)
 
         let interactor = FriendsInteractor()
         let presenter = FriendsPresenter(view: moduleViewController, interactor: interactor, wireframe: self)

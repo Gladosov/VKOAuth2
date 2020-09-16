@@ -21,8 +21,9 @@ protocol FriendsPresenterInterface: PresenterInterface {
     var friends: [User] { get set }
     var friendsCount: Int { get }
     func viewDidLoad()
+    func loadMoreFriends()
 }
 
 protocol FriendsInteractorInterface: InteractorInterface {
-    func loadFriends(completion: @escaping ([User]) -> ())
+    func loadFriends(offset: Int, completion: @escaping ([User]) -> ())
 }

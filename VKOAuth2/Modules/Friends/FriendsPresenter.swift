@@ -19,6 +19,7 @@ final class FriendsPresenter {
     private let wireframe: FriendsWireframeInterface
     
     private var friendsArray: [User] = []
+    private var currentOffset: Int = 0
 
     // MARK: - Lifecycle -
 
@@ -26,6 +27,13 @@ final class FriendsPresenter {
         self.view = view
         self.interactor = interactor
         self.wireframe = wireframe
+    }
+    
+    private func loadFriends() {
+        interactor.loadFriends(offset: currentOffset) { [weak self] (users) in
+            self?.friends.append(contentsOf: users)
+            self?.view.onUpdate()
+        }
     }
 }
 
@@ -46,9 +54,11 @@ extension FriendsPresenter: FriendsPresenterInterface {
     }
     
     func viewDidLoad() {
-        interactor.loadFriends { [weak self] (users) in
-            self?.friends.append(contentsOf: users)
-            self?.view.onUpdate()
-        }
+        loadFriends()
+    }
+    
+    func loadMoreFriends() {
+        currentOffset += 10
+        loadFriends()
     }
 }

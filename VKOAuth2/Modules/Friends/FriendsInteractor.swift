@@ -18,10 +18,10 @@ final class FriendsInteractor {
 // MARK: - Extensions -
 
 extension FriendsInteractor: FriendsInteractorInterface {
-    func loadFriends(completion: @escaping ([User]) -> ()) {
+    func loadFriends(offset: Int, completion: @escaping ([User]) -> ()) {
         friendsService.fetchFriends(
             userId: userSettings.userId,
-            offset: 0,
+            offset: offset,
             accessToken: userSettings.accessToken) { result in
                 switch result {
                 case .success(let response):
