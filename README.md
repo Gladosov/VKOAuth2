@@ -10,3 +10,7 @@ A client for VK created for educational purposes, learning new technologies, and
 
 ### To do
 * Display tabbar for authorized user (Friends, Wall, Photos)
+
+<img src="img/Simulator Screen Shot - iPhone 11 Pro Max - 2020-09-18 at 12.25.15.png" />
+<img src="img/Simulator Screen Shot - iPhone 11 Pro Max - 2020-09-18 at 12.25.33.png" />
+<img src="img/Simulator Screen Shot - iPhone 11 Pro Max - 2020-09-18 at 12.25.52.png" />
