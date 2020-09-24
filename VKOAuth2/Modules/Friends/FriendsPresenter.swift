@@ -40,6 +40,7 @@ final class FriendsPresenter {
 // MARK: - Extensions -
 
 extension FriendsPresenter: FriendsPresenterInterface {
+        
     var friends: [User] {
         get {
             friendsArray
@@ -51,6 +52,10 @@ extension FriendsPresenter: FriendsPresenterInterface {
     
     var friendsCount: Int {
         friends.count
+    }
+    
+    var tableRowHeight: Double {
+        100
     }
     
     func viewDidLoad() {

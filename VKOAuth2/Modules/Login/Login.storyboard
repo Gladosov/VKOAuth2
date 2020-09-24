@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="HgF-VT-6L7">
-                                <rect key="frame" x="10" y="177" width="355" height="260"/>
+                                <rect key="frame" x="10" y="177" width="355" height="198"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW9-Ep-wdp">
                                         <rect key="frame" x="0.0" y="0.0" width="202" height="86"/>
@@ -73,37 +74,13 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vab-BX-CEJ">
-                                        <rect key="frame" x="0.0" y="129" width="250" height="68.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приложение создано в образовательных целях, для демонстрации навыков." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vab-BX-CEJ">
+                                        <rect key="frame" x="0.0" y="129" width="250" height="69"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="4id-9v-6vv"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Приложение создано в образовательных целях, для демонстрации навыков.">
-                                                <attributes>
-                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="GillSans-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-AJ-BDg">
-                                        <rect key="frame" x="0.0" y="240.5" width="250" height="19.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="YGn-5R-GOH"/>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Создатель - Семенов Даниил">
-                                                <attributes>
-                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="17" name="GillSans-Light"/>
-                                                    <font key="NSOriginalFont" size="14" name="GillSans-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -127,6 +104,7 @@
                             <constraint firstAttribute="trailing" secondItem="HgF-VT-6L7" secondAttribute="trailing" constant="10" id="rEI-Rq-W8p"/>
                             <constraint firstItem="hbx-jg-ZTZ" firstAttribute="leading" secondItem="Z2g-4m-atm" secondAttribute="leading" constant="30" id="xpd-KU-CJt"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="RcA-Yc-qjS"/>
                     </view>
                     <connections>
                         <outlet property="brandLabel" destination="gbv-xk-u0t" id="wbZ-cd-D3Q"/>

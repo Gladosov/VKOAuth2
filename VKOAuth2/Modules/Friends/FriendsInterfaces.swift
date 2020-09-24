@@ -20,6 +20,7 @@ protocol FriendsViewInterface: ViewInterface {
 protocol FriendsPresenterInterface: PresenterInterface {
     var friends: [User] { get set }
     var friendsCount: Int { get }
+    var tableRowHeight: Double { get }
     func viewDidLoad()
     func loadMoreFriends()
 }
